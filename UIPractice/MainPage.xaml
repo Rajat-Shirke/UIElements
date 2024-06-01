@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             x:Class="UIPractice.MainPage">
+
+
+        <VerticalStackLayout
+            Padding="30,0"
+            VerticalOptions="Center"
+            Spacing="25">
+        <skia:SKLottieView RepeatCount="-1"
+                           x:Name="lottieview"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           RepeatMode="Restart"
+                           Source="evChargingicon.json" />
+        <skia:SKLottieView RepeatCount="-1"
+                           IsVisible="false"
+                           x:Name="loadingview"
+                           HeightRequest="200"
+                           WidthRequest="200"
+                           RepeatMode="Restart"
+                           Source="loading.json" />
+        <Button
+            x:Name="gridlayout"
+            Text="With Grid layout"
+            Clicked="gridlayout_Clicked"/>
+        
+        </VerticalStackLayout>
+  
+
+</ContentPage>
+
